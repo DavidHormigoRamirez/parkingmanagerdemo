@@ -10,7 +10,7 @@ public class UserRepository {
 
         //TODO : Eliminar este codigo
         ArrayList<User> users= new ArrayList<>();
-        users.add(new User("david","dhorram948@g.educand.es"));
+        users.add(new User("david", "hormigo", "Ramirez", "Profesor"));
         return users;
 
     }

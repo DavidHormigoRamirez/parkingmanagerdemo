@@ -1,31 +1,64 @@
 package com.park.tech.malaga.cpifp.parkingmanagerdemo.user;
 
 public class User {
-    
+
     private long id;
-    private String email;
-    private String nombre;
+    private String firstName;
+    private String lastName1;
+    private String lastName2;
+    private String role;
 
-    public User(String email, String nombre){
-        this.email =  email;
-        this.nombre = nombre;
+    
+    public User(String firstName, String lastName1, String lastName2, String role) {
+        this.firstName = firstName;
+        this.lastName1 = lastName1;
+        this.lastName2 = lastName2;
+        this.role = role;
     }
 
-    public String getEmail() {
-        return this.email;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getNombre() {
-        return this.nombre;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+
+    public String getLastName1() {
+        return lastName1;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+
+    public void setLastName1(String lastName1) {
+        this.lastName1 = lastName1;
     }
 
+
+    public String getLastName2() {
+        return lastName2;
+    }
+
+
+    public void setLastName2(String lastName2) {
+        this.lastName2 = lastName2;
+    }
+
+
+    public String getRole() {
+        return role;
+    }
+
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+
+    public String getFullName() {
+        return this.firstName + " " + this.lastName1 + " " + this.lastName2;
+    }
 
 }
