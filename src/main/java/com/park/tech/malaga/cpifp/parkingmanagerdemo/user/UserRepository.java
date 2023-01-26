@@ -13,10 +13,12 @@ public class UserRepository {
         usuarios = new ArrayList<>();
     }
     public List<User> getAll() {
-        this.usuarios.clear();
-        this.usuarios.add(new User("dhorram948@g.educand.es","David Hormigo Ramirez"));
-        this.usuarios.add(new User("otroemail","Alejandro"));
-        return this.usuarios;
+
+        //TODO : Eliminar este codigo
+        ArrayList<User> users= new ArrayList<>();
+        users.add(new User("david", "hormigo", "Ramirez", "Profesor"));
+        return users;
+
     }
     
 }
