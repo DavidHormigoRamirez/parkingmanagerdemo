@@ -8,24 +8,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/icons/parking-lot.png"/ >
     <!-- CSS Dependencies -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <title>Bienvenidos al Parking del CPIFP</title>
+    <script src="https://kit.fontawesome.com/41bd385311.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Bienvenidos al Parking del CPIFP Málaga TechPark</title>
   </head>
   <body>
   </head>
   <body>
+    <script>
+      $(document).ready(function () {
+        $(".navbar-burger").click(function () {
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+        });
+      });
+    </script>
+    <nav
+      class="navbar is-light"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/icons/parking-lot.png" width="32px" height="32px" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a role="button" class="navbar-item">Sign up</a>
+          <a role="button" class="navbar-item">Log in</a>
+        </div>
+      </div>
+    </nav>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Parking Malaga TechPark</h1>
-        <ul>
-          <li>Gestión de <a href="users">usuarios</a></li>
-        </ul>
+        <h1 class="title is-1">Parking CPIFP Malaga TechPark</h1>
+        <div class="content is-medium">
+          <p>Gestión de <a href="users">usuarios</a></p>
+        </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Created with <span class="icon has-text-danger"><i class="fa-regular fa-heart"></i></span> by CPIFP Málaga
+          TechPark
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
 
