@@ -4,27 +4,31 @@ public class User {
     
     private long id;
     private String email;
-    private String nombre;
+    private String name;
 
-    public User(String email, String nombre){
+    public User(String email, String name){
         this.email =  email;
-        this.nombre = nombre;
+        this.name = name;
+    }
+
+    public long getId(){
+        return this.id;
     }
 
     public String getEmail() {
         return this.email;
     }
 
-    public String getNombre() {
-        return this.nombre;
+    public String getName() {
+        return this.name;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
 
