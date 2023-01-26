@@ -8,6 +8,9 @@ public class User {
     private String lastName2;
     private String role;
 
+    public User() {
+        this("","","","");
+    }
     
     public User(String firstName, String lastName1, String lastName2, String role) {
         this.firstName = firstName;

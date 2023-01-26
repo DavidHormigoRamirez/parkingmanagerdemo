@@ -17,17 +17,4 @@ public class UserController {
         return "userlist";
 
     }
-
-    @GetMapping("/newUser")
-    public String userForm(Model model) {
-        model.addAttribute("user", new User());
-        return "newUserForm";
-    }
-
-    @PostMapping("/newUser")
-    public String createUser(@ModelAttribute User user,Model model) {
-        model.addAttribute("user", user);
-        repository.save(user);
-        return "redirect:/users";
-    }
 }
