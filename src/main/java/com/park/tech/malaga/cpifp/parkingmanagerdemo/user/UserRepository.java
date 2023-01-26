@@ -4,19 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
+
 @Repository
 public class UserRepository {
 
+    ArrayList<User> users;
 
-    private ArrayList<User> usuarios;
+    //TODO : Eliminar este codigo
     public UserRepository() {
-        usuarios = new ArrayList<>();
+        this.users = new ArrayList<>();
+        users.add(new User("david", "hormigo", "Ramirez", "Profesor"));
+        users.add(new User("Manolo", "Perez", "Ramirez", "Alumno"));
     }
+    
     public List<User> getAll() {
 
-        //TODO : Eliminar este codigo
-        ArrayList<User> users= new ArrayList<>();
-        users.add(new User("david", "hormigo", "Ramirez", "Profesor"));
         return users;
 
     }
