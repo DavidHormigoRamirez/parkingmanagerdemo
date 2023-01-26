@@ -22,5 +22,9 @@ public class UserRepository {
         return users;
 
     }
+
+    public void save(User user) {
+        this.users.add(user);
+    }
     
 }
