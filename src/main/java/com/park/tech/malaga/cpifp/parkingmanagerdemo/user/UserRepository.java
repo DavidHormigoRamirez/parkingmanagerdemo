@@ -10,17 +10,19 @@ public class UserRepository {
 
     ArrayList<User> users;
 
-    //TODO : Eliminar este codigo
+    
     public UserRepository() {
         this.users = new ArrayList<>();
-        users.add(new User("david", "hormigo", "Ramirez", "Profesor"));
-        users.add(new User("Manolo", "Perez", "Ramirez", "Alumno"));
     }
     
     public List<User> getAll() {
 
         return users;
 
+    }
+
+    public void add(User user) {
+        this.users.add(user);
     }
     
 }
