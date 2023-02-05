@@ -67,9 +67,9 @@ public class User {
         this.role = role;
     }
 
-
-    public String getFullName() {
-        return this.firstName + " " + this.lastName1 + " " + this.lastName2;
+    @Override
+    public String toString() {
+        return (this.firstName + " " + this.lastName1 + " " + this.lastName2).strip();
     }
 
 }
