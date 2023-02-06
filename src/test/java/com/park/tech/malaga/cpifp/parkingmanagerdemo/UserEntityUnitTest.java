@@ -24,7 +24,7 @@ public class UserEntityUnitTest {
         String actual = this.user.getFirstName();
 
         // Assert
-        assertEquals(expected, actual,"Nombre no es correcto");
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -37,6 +37,6 @@ public class UserEntityUnitTest {
         this.user.setFirstName("Juan");
         String actual = this.user.getFirstName();
 
-        assertEquals(expected, actual,"Nombre no es correcto");
+        assertEquals(expected, actual);
     }
 }
